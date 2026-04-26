@@ -1,0 +1,30 @@
+#ollama:
+#  base_url: "http://localhost:11434"
+#  model: "qwen3:8b"
+#  temperature: 0.8
+#  max_tokens: 512
+ollama:
+  base_url: "http://localhost:11434"
+  model: "qwen3:4b"
+  temperature: 0.7
+  max_tokens: 2048
+  num_ctx: 20480
+
+qdrant:
+  host: "localhost"
+  port: 6333
+  collection: "vtuber_memory"
+
+sqlite:
+  path: "memory/vtuber.db"
+
+tts:
+  engine: "edge_tts"
+
+persona:
+  path: "persona/persona.yaml"
+
+spotify:
+  client_id: "4eb22388535748e69c9ba43576b6a254"
+  client_secret: "71849a46fae14a42bbb4c6078dbbdde9"
+  redirect_uri: "http://127.0.0.1:8888/callback"
